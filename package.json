@@ -1,0 +1,26 @@
+{
+  "name": "worker-event-bridge",
+  "version": "0.1.0",
+  "description": "A channel to transmit DOM-based events setup and responses between a worker and the main (UI) threads.",
+  "main": "main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloodyKnuckles/worker-event-bridge.git"
+  },
+  "keywords": [
+    "service",
+    "web",
+    "worker",
+    "DOM",
+    "event"
+  ],
+  "author": "Jay Scott ANDERSON",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bloodyKnuckles/worker-event-bridge/issues"
+  },
+  "homepage": "https://github.com/bloodyKnuckles/worker-event-bridge#readme"
+}
