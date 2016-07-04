@@ -29,6 +29,8 @@ self.addEventListener('message', function (evt) {
 }, false)
 ```
 
+[A Cycle.js implementation example.](https://github.com/bloodyKnuckles/cycle-web-worker)
+
 ### license
 
 MIT
