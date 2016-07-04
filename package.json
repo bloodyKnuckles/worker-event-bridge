@@ -1,6 +1,6 @@
 {
   "name": "worker-event-bridge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A channel to transmit DOM-based events setup and responses between a worker and the main (UI) threads.",
   "main": "main",
   "scripts": {
