@@ -1,4 +1,14 @@
-function eventBridge (worker, evtinfo) {
+function eventBridge (worker) {
+  worker.addEventListener('message', function (evt) {
+    evt.data.forEach(function (data) {
+      if ( 'event' === data.cmd ) {
+        addListener(worker, data.event)
+      }
+    })
+  }, false)
+}
+
+function addListener (worker, evtinfo) {
   document.querySelector(evtinfo.element)
     .addEventListener(evtinfo.event, function evtFn (evt) {
       worker.postMessage({
@@ -14,4 +24,5 @@ function eventBridge (worker, evtinfo) {
     }, false);
 }
 
+eventBridge.addListener = addListener
 module.exports = eventBridge
