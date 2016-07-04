@@ -6,13 +6,7 @@
 var eventBridge = require('worker-event-bridge/main')
 
 var worker = new Worker('./worker.js')
-worker.addEventListener('message', function (evt) {
-  evt.data.forEach(function (data) {
-    if ( 'event' === data.cmd ) {
-      eventBridge(worker, data.event)
-    }
-  })
-}, false)
+eventBridge(worker)
 ```
 
 ### worker thread usage
