@@ -1,4 +1,4 @@
-function eventBridge (worker) {
+function eventBridgeMain (worker) {
   worker.addEventListener('message', function (evt) {
     evt.data.forEach(function (data) {
       if ( 'event' === data.cmd ) {
@@ -24,5 +24,5 @@ function addListener (worker, evtinfo) {
     }, false);
 }
 
-eventBridge.addListener = addListener
-module.exports = eventBridge
+eventBridgeMain.addListener = addListener
+module.exports = eventBridgeMain
